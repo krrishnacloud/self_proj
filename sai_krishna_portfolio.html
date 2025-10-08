@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sai Krishna — 3D Modelling Artist</title>
+  <meta name="description" content="Portfolio of Sai Krishna — 3D Modelling, Texturing, ZBrush and Lighting (basic).">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b1220;--card:#0f1724;--muted:#9aa6bb;--accent:#6b21a8}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial;background:linear-gradient(180deg,#071028,#081427);color:#e9f0fb;margin:0}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#4f46e5);display:flex;align-items:center;justify-content:center;font-weight:800}
+    nav a{color:inherit;text-decoration:none;margin-left:14px}
+    .hero{display:flex;gap:28px;align-items:center;margin-top:28px}
+    .hero-left{flex:1}
+    .hero-right{width:360px}
+    h1{font-size:2.4rem;margin:0}
+    h2{margin:18px 0 10px}
+    .muted{color:var(--muted)}
+    .card{background:rgba(255,255,255,0.03);padding:16px;border-radius:12px}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin-top:12px}
+    .gallery img{width:100%;height:140px;object-fit:cover;border-radius:8px}
+    footer{margin-top:28px;color:var(--muted);font-size:0.95rem}
+    @media(max-width:880px){.hero{flex-direction:column}.hero-right{width:100%}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">SK</div>
+        <div>
+          <div style="font-weight:700">Sai Krishna</div>
+          <div class="muted" style="font-size:0.95rem">3D Modelling artist</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#showreel">Showreel</a>
+        <a href="#photos">Photos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-left">
+          <div class="card">
+            <div class="muted">Hey, I'm</div>
+            <h1>Sai<br>Krishna</h1>
+            <p class="muted">3D Modelling artist</p>
+            <p class="muted">I completed my graduation and diploma at International Academy of Computer Graphics (IACG). I work on modelling, texturing, ZBrush and have basic lighting knowledge. I'm passionate about exploring new techniques and applying my skills to creative projects.</p>
+            <p><a href="https://ac3a631b-b621-414d-9d0f-e67e8e8b9852.filesusr.com" target="_blank" rel="noopener">View Full Resume</a></p>
+          </div>
+        </div>
+        <aside class="hero-right">
+          <div class="card" style="padding:0;overflow:hidden">
+            <!-- Background image used on original site. Replace with real asset if you like -->
+            <img src="https://krishnavemula423.wixsite.com/myportfolio/_files/placeholder-bg.png" alt="hero image" style="width:100%;height:260px;object-fit:cover;display:block">
+          </div>
+        </aside>
+      </section>
+
+      <section id="showreel" style="margin-top:20px">
+        <h2>Showreel</h2>
+        <div class="card" style="padding:12px">
+          <p class="muted">Play Video — Showreel</p>
+          <!-- Placeholder video: replace src with real showreel URL or embed code -->
+          <div style="margin-top:8px">
+            <video controls style="width:100%;border-radius:8px;background:#000">
+              <source src="" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <section id="photos" style="margin-top:20px">
+        <h2>Photos</h2>
+        <div class="gallery">
+          <!-- The original Wix site contains many images — replace the src values with the real image files from the site or your preferred images. -->
+          <img src="https://krishnavemula423.wixsite.com/myportfolio/images/image1.jpg" alt="photo 1">
+          <img src="https://krishnavemula423.wixsite.com/myportfolio/images/image2.jpg" alt="photo 2">
+          <img src="https://krishnavemula423.wixsite.com/myportfolio/images/image3.jpg" alt="photo 3">
+          <img src="https://krishnavemula423.wixsite.com/myportfolio/images/image4.jpg" alt="photo 4">
+          <img src="https://krishnavemula423.wixsite.com/myportfolio/images/image5.jpg" alt="photo 5">
+          <img src="https://krishnavemula423.wixsite.com/myportfolio/images/image6.jpg" alt="photo 6">
+        </div>
+      </section>
+
+      <section id="contact" style="margin-top:20px">
+        <h2>Contact</h2>
+        <div class="card">
+          <p style="margin:6px 0 2px;font-weight:700">Saikrishna</p>
+          <p class="muted" style="margin:0 0 6px">Email: <a href="mailto:krishnavemula423@gmail.com">krishnavemula423@gmail.com</a></p>
+          <p class="muted" style="margin:0">Phone: <a href="tel:+919000814399">+91 90008 14399</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:24px">
+        <div class="muted">© <span id="year"></span> Sai Krishna</div>
+        <div class="muted">Built from a Wix portfolio — converted to a static HTML demo</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
